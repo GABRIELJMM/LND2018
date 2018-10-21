@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+  a.ex2:hover, a.ex2:active {font-size: 30px;}
+
+
+  <link type="text/css" rel="stylesheet" href="ejercicio2.css">
+  <meta charset="UTF-8">
+  window.onload = function() {
+  var files = document.querySelectorAll("input[type=file]");
+  files[0].addEventListener("change", function(e) {
+  if(this.files && this.files[0]) {
+  var reader = new FileReader();
+  reader.onload = function(e) { document.getElementById("preview").setAttribute("src", e.target.result); }
+  reader.readAsDataURL(this.files[0]);
+  }
+  });
+  }
+
+
+</head>
+
+
+
+<body>
+  <h1><span id="negrita">Por favor, introduce tus datos</span></h1>
+  <form>
+    <fieldset>
+
+
+      <legend><a class="ex2" href="default.asp">Tu cara</legend></a>
+
+      <div>
+        <label><a class="ex2" href="default.asp">Foto</label></a><input type="file" label for="Foto" required autofocus>
+      </div>
+      <div>
+        <label><a class="ex2" href="default.asp">Previsualización de imagen</label></a>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><a class="ex2" href="default.asp">Datos generales</legend></a>
+      <div>
+        <label><a class="ex2" href="default.asp">Nombre:</label></a>
+        <input type="text" label for="Nombre" required autofocus>
+      </div>
+      <div>
+        <label><a class="ex2" href="default.asp">Género:</label></a>hombre<input type="radio" value="hombre">
+        mujer<input type="radio" value="mujer" label for="Género" required autofocus>
+        <div>
+          <label><a class="ex2" href="default.asp">Edad:</label></a><input type="text">
+        </div>
+        <div>
+          <label><a class="ex2" href="default.asp">Fecha de nacimiento:</label></a><input type="date">
+        </div>
+        <div>
+          <label><a class="ex2" href="default.asp">Color favorito:</label></a><input type="color">
+        </div>
+        <div>
+          <label><a class="ex2" href="default.asp">País:<Select name="País" :>
+                <option value="Canadá">Canadá</option>
+                <option value="España">España</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Francia">Francia</option>
+
+              </Select></label></a>
+
+        </div>
+    </fieldset>
+    <fieldset>
+
+      <legend><a class="ex2" href="default.asp">Otras características</legend></a>
+      <div>
+        <label><a class="ex2" href="default.asp">Altura:</label></a>
+        <action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          Bajo
+          <input type="range" id="bajo" name"bajo" value="100">
+          Alto
+      </div>
+      <div>
+        <label><a class="ex2" href="default.asp">Salario:</label></a>
+        <action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          Pobre
+          <input type="range" id="Pobre" name"Rico" value="100">
+          Rico
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend><a class="ex2" href="default.asp">Información de contacto</legend></a>
+      <div>
+        <label><a class="ex2" href="default.asp">Email:</label></a><input type="text" label for="Email" required autofocus>
+
+      </div>
+      <div>
+        <label><a class="ex2" href="default.asp">Móvil:</label></a><input type="tel">
+      </div><br>
+      <label><a class="ex2" href="default.asp">Dirección:</label></a><textarea name="message" style="width:200px; height:50px"></textarea><br>
+      <label><a class="ex2" href="default.asp">Método de contacto:</label></a><input type="radio" name="gender" value="Email">Email<input type="radio" name="gender" value="Whatsapp">Whatsapp<input type="radio" name="gender" value="Skype">Skype
+
+    </fieldset>
+
+
+  </form>
+</body>
+
+</html>

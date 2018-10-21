@@ -1,0 +1,9 @@
+body {
+
+    font-family:"Trebutchet MS";
+    font-size: 100%;
+}
+    h1   {color: red;}
+    p {color:maroon}
+    #negrita{font-weight:bold;color:purple}
+    #cursiva{font-style: italic;color:green}
